@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;            
+        }
+        body {            
+            background: rgb(2,0,36);
+            background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(71,28,108,0.9192051820728291) 42%, rgba(0,212,255,1) 100%);            
+            height: 100vh; /* Ajustar altura al 100% del viewport */
+            display: flex; /* Utilizar flexbox para centrar contenido */
+            justify-content: center; /* Centrar horizontalmente */
+            align-items: center; /* Centrar verticalmente */            
+        }
+
+        .cont-a{
+            /* border: 1px solid red; */
+            height: 400px;
+            width: 300px;            
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cont-b{            
+            height: 40%;
+            width: 300px;            
+        }
+        .cont-b img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cont-c{
+            /* border: 2px solid blue;             */
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 28%;
+            left: 50%; /* Centrado horizontalmente */
+            transform: translateX(-50%); /* Ajuste para centrado horizontal */
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .cont-c img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 2;
+        }
+        .cont-d{            
+            width: 100%;
+            height: 60%;
+            background: rgb(230, 232, 253);            
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .cont-e{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 20%;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .cont-e h2{
+            font-family: 'Tangerine', cursive;
+            color: black;            
+            font-size: 30px;
+            font-weight: normal;
+        }
+        .cicons-text{
+            display: flex;
+            flex-direction: column;
+            /* border: 2px solid green; */
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        .icons{
+            display: flex;
+            flex-flow: row-reverse nowrap;            
+            /* border: 2px solid blue; */
+            width: 100%;
+            height: 20%;
+            position: relative;
+            justify-content: center;
+            align-content: center;
+            gap: 25px;
+        }
+        .icons a{
+            display: flex;            
+            align-items: center;
+            margin: 0;
+        }
+        .icons img{
+            width: 20px;
+            height: 20px;
+        }
+        .texto{
+            /* border: 2px solid rgb(92, 92, 156);             */
+            width: 100%;
+            height: 80%;
+            padding: 5px;
+        }
+        .texto p{            
+            font-family: "Noto Sans SC", sans-serif;
+            font-size: 13px;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cont-a">
+            <div class="cont-b">
+                <img src="https://images.pexels.com/photos/462331/pexels-photo-462331.jpeg" alt="">
+            </div>
+            <div class="cont-c">
+                <img src="https://media.licdn.com/dms/image/D4E03AQEPTq658jBXOA/profile-displayphoto-shrink_800_800/0/1703067966657?e=1713398400&v=beta&t=JGunCYdnEz61Cq53aPi0VztREqe6Hb9tJSvuKPbysfM" alt="">
+            </div>
+            <div class="cont-d">                
+                <div class="cont-e">                    
+                    <h2>Alvaro Olarte S.</h2>
+                </div>
+                <div class="cicons-text">
+                    <div class="icons">
+                        <a href="https://www.github.com">
+                            <img src="https://img.icons8.com/plasticine/100/github.png" alt="github"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aolartes">
+                            <img width="50" height="50" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                        </a>
+                        <a href="https://www.twitter.com">
+                            <img width="50px" height="50px" src="https://img.icons8.com/ios/50/twitterx--v1.png" alt="twitterx"/>
+                        </a>
+                    </div>
+                    <div class="texto">
+                        <hr>
+                        <p>Ing. de Sistemas, con conocimiento y experiencia en el desarrollo en bases de datos con lenguajes SQL principalmente MSSQL Server, PL/SQL Oracle y aprendiz de frontend.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+                     
+        </div>
+    </section>
+</body>
+</html>
+
+
